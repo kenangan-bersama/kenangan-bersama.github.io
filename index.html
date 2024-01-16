@@ -70,18 +70,15 @@
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#features">Fitur</a></li>
-            <li>
-              <a class="nav-link scrollto" href="#price">Pricelist</a>
-            </li>
-            <li><a class="nav-link scrollto" href="#thema">Tema</a></li>
+            <li><a class="nav-link scrollto" href="#features">Features</a></li>
+            <li><a class="nav-link scrollto" href="#price">Pricelist</a></li>
+            <li><a class="nav-link scrollto" href="#thema">Themes</a></li>
             <li><a class="nav-link scrollto" href="#order">Order</a></li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <!-- .navbar -->
       </div>
     </header>
+
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
@@ -826,6 +823,28 @@
                   </p>
                 </div>
               </li>
+              <li data-aos="fade-up" data-aos-delay="500">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-7"
+                  class="collapsed"
+                >
+                  Apakah Bisa Custom Thema?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i>
+                </a>
+                <div
+                  id="faq-list-7"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Tidak, saat ini kami tidak menyediakan opsi untuk custom
+                    tema. Anda dapat memilih tema yang telah kami sediakan.
+                  </p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -839,14 +858,21 @@
     <footer class="bg-body-tertiary text-center">
       <!-- Copyright -->
       <div
+        id="copyright"
         class="text-center text-white p-3"
         style="background-color: rgb(0 107 179)"
       >
-        Copyright © 2023 | Designed With by
+        Copyright © <span id="currentYear"></span> | Designed With by
         <a class="text-body" href="index.html">KenanganBersama</a>
       </div>
       <!-- Copyright -->
     </footer>
+
+    <script>
+      // JavaScript code to dynamically update the current year
+      document.getElementById("currentYear").innerText =
+        new Date().getFullYear();
+    </script>
     <!-- Footer -->
 
     <div id="myDiv"></div>
