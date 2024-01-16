@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title id="dynamicTitle">
+      Undangan Pernikahan Digital - KenanganBersama
+    </title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- logo -->
+    <link href="assets/img/logo.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Josefin+Sans:wght@400;500&family=Lobster+Two&family=Overpass:wght@400;500&family=Sacramento&family=Fira+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tambahkan tautan CSS Font Awesome di bawah ini -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"
+      integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU="
+      crossorigin="anonymous"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./floating-whatsapp/floating-wpp.min.css" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="fixed-top d-flex align-items-center header-transparent"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1>
+            <a href="index.html"><span>KenanganBersama</span></a>
+          </h1>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#features">Fitur</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#price">Pricelist</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#thema">Tema</a></li>
+            <li><a class="nav-link scrollto" href="#order">Order</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center"
+            data-aos="zoom-out"
+          >
+            <div>
+              <h1>
+                Undangan Pernikahan Digital Online <span>KenanganBersama</span>
+              </h1>
+              <h2>Proses cepat, 10 menit undangan langsung jadi</h2>
+              <div class="text-center text-lg-start">
+                <a
+                  href="https://wa.me/6285313839671"
+                  class="btn-get-started scrollto"
+                  onclick="pesanTemaUndangan()"
+                  target="_blank"
+                >
+                  <i
+                    class="bx bx-message-square-detail"
+                    style="margin-right: 10px"
+                  ></i
+                  >Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 order-1 order-lg-2 hero-img"
+            data-aos="zoom-out"
+            data-aos-delay="300"
+          >
+            <img
+              src="./assets/img/kenangan-5.png"
+              class="img-fluid rounded-4 animated"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <svg
+        class="hero-waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="wave-path"
+            d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44H-352z"
+          ></path>
+        </defs>
+        <g class="wave1">
+          <use
+            xlink:href="#wave-path"
+            x="50"
+            y="3"
+            fill="rgba(255,255,255, .1"
+          ></use>
+        </g>
+        <g class="wave2">
+          <use
+            xlink:href="#wave-path"
+            x="50"
+            y="0"
+            fill="rgba(255,255,255, .2"
+          ></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+        </g>
+      </svg>
+    </section>
+
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
+              data-aos="fade-right"
+            ></div>
+
+            <div
+              class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
+              data-aos="fade-left"
+            >
+              <h3>Pembuatan Undangan Pernikahan Digital</h3>
+              <p>
+                Kami adalah tim yang berdedikasi dalam menciptakan undangan
+                pernikahan digital yang indah dan berkesan. Dengan sentuhan
+                kreatif kami, kami mengubah momen istimewa Anda menjadi
+                pengalaman yang tak terlupakan. Undangan pernikahan digital kami
+                memberikan kesan modern, ramah lingkungan, dan dapat diakses
+                dengan mudah oleh semua tamu Anda.
+              </p>
+
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon"><i class="bx bx-paint"></i></div>
+                <h4 class="title"><a href="">Desain Kreatif</a></h4>
+                <p class="description">
+                  Kami menghadirkan desain kreatif dan inovatif untuk undangan
+                  pernikahan digital Anda. Setiap detail diperhatikan dengan
+                  teliti, sehingga undangan Anda menjadi unik dan menggambarkan
+                  kepribadian Anda.
+                </p>
+              </div>
+
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon"><i class="bx bx-gift"></i></div>
+                <h4 class="title"><a href="">Pengalaman Tak Terlupakan</a></h4>
+                <p class="description">
+                  Kami berkomitmen untuk menciptakan pengalaman tak terlupakan
+                  bagi Anda dan tamu-tamu Anda. Undangan pernikahan digital kami
+                  memberikan kemudahan dalam RSVP dan berbagi cerita cinta Anda.
+                </p>
+              </div>
+
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon"><i class="bx bx-smile"></i></div>
+                <h4 class="title"><a href="">Pelayanan Terbaik</a></h4>
+                <p class="description">
+                  Pelayanan pelanggan adalah prioritas kami. Kami siap membantu
+                  Anda dalam setiap tahap pembuatan undangan digital Anda. Kami
+                  memastikan bahwa Anda puas dengan hasilnya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End About Section -->
+
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <div class="d-flex align-items-center justify-content-center">
+              <hr
+                class="flex-grow-1 mx-1"
+                style="
+                  border-color: #000000;
+                  border-width: 2.5px;
+                  max-width: 300px;
+                "
+              />
+              <h2 class="font-depan my-4">Fitur Undangan</h2>
+              <hr
+                class="flex-grow-1 mx-1"
+                style="
+                  border-color: #000000;
+                  border-width: 2.5px;
+                  max-width: 300px;
+                "
+              />
+            </div>
+            <p>Fitur-fitur <em>Unggulan Undangan</em></p>
+          </div>
+
+          <div class="row" data-aos="fade-left">
+            <div class="col-lg-3 col-md-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                <i class="bx bx-user" style="color: #ffbb2c"></i>
+                <h3>Tamu Undangan</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                <i class="bx bx-book" style="color: #5578ff"></i>
+                <h3>Buku Tamu</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+                <i class="bx bx-timer" style="color: #e80368"></i>
+                <h3>Countdown Timer</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <i class="bx bx-paint" style="color: #e361ff"></i>
+                <h3>Amplop Digital</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
+                <i class="bx bx-map" style="color: #47aeff"></i>
+                <h3>Peta Alamat</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                <i class="bx bx-image" style="color: #ffa76e"></i>
+                <h3>Galeri Foto</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
+                <i class="bx bx-book-content" style="color: #11dbcf"></i>
+                <h3>Cerita Pasangan</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fab fa-whatsapp" style="color: #00ff99"></i>
+                <h3>Share WhatsApp</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fa-solid fa-music" style="color: #cc33cc"></i>
+                <h3>Background Music</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Features Section -->
+
+      <section class="price" id="price">
+        <div class="container">
+          <div class="section-title">
+            <div class="d-flex align-items-center justify-content-center">
+              <hr
+                class="flex-grow-1 mx-1"
+                style="
+                  border-color: #000000;
+                  border-width: 2.5px;
+                  max-width: 300px;
+                "
+              />
+              <h2 class="font-depan my-4">Pricelist</h2>
+              <hr
+                class="flex-grow-1 mx-1"
+                style="
+                  border-color: #000000;
+                  border-width: 2.5px;
+                  max-width: 300px;
+                "
+              />
+            </div>
+            <p>
+              Beserta rincian
+              <i>fitur yang akan didapatkan</i>
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <!-- Pricing Card 1 -->
+            <div class="col-lg-4 mb-4">
+              <div
+                class="card-body border rounded-4 shadow p-3 bg-white text-center"
+              >
+                <div class="card-header">
+                  <h5 class="card-title">Paket Murah</h5>
+                </div>
+                <hr class="my-2" />
+                <div class="card-body">
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Cover
+                    Undangan
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Nama Tamu
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Hitung
+                    Mundur
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Google
+                    Calendar
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Navigasi
+                    Lokasi
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Ucapan
+                    Selamat
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Wedding
+                    Gift
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> RSVP
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Request
+                    Musik
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Love Story
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Input Photo
+                    - Maksimal 10
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">IDR 65.500</a>
+                </div>
+              </div>
+            </div>
+            <!-- Pricing Card 2 (Paket Hemat) -->
+            <div class="col-lg-4 mb-4">
+              <div
+                class="card-body border rounded-4 shadow p-3 bg-white text-center"
+              >
+                <div class="card-header">
+                  <h5 class="card-title">Paket Komplit</h5>
+                </div>
+                <hr class="my-2" />
+                <div class="card-body">
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Cover
+                    Undangan
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Nama Tamu
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Hitung
+                    Mundur
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Google
+                    Calendar
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Navigasi
+                    Lokasi
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Ucapan
+                    Selamat
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Wedding
+                    Gift
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> RSVP
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Request
+                    Musik
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Love Story
+                  </p>
+                  <hr class="my-2" />
+                  <p class="card-text text-start">
+                    <i class="fas fa-check-circle text-success"></i> Input Photo
+                    &amp; Pixel Disney - Maksimal 10 Photo
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">IDR 85.500</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="thema-kenangan" id="thema">
+        <div class="container">
+          <div class="section-title">
+            <div class="d-flex align-items-center justify-content-center">
+              <hr
+                class="flex-grow-1 mx-1"
+                style="
+                  border-color: #000000;
+                  border-width: 2.5px;
+                  max-width: 300px;
+                "
+              />
+              <h2 class="font-depan my-4">Pilihan Thema</h2>
+              <hr
+                class="flex-grow-1 mx-1"
+                style="
+                  border-color: #000000;
+                  border-width: 2.5px;
+                  max-width: 300px;
+                "
+              />
+            </div>
+            <p>Sesuai Dengan Kedua <em>Hati Yang Bersama</em></p>
+          </div>
+          <div class="row">
+            <!-- Card 1 -->
+            <div
+              class="col-md-4 mb-4 d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="card border-light shadow rounded-4 p-3 theme-card h-100"
+              >
+                <img
+                  src="./assets/img/kenangan-1.png"
+                  class="card-img-top"
+                  alt="Gambar Tema 1"
+                />
+
+                <div class="card-body">
+                  <a
+                    href="https://hsbnsultan.github.io/kenangan-1/?to=Sultan+dan+Partner"
+                    class="button btn btn-danger mt-4"
+                    target="_blank"
+                  >
+                    <i class="fas fa-eye"></i> Lihat Thema
+                  </a>
+                  <a
+                    href="javascript:void(0);"
+                    class="button btn btn-dark mt-3"
+                    onclick="pesanTema(1)"
+                  >
+                    <i class="fas fa-shopping-cart"></i> Pesan Tema
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="col-md-4 mb-4 d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="card border-light shadow rounded-4 p-3 theme-card h-100"
+              >
+                <img
+                  src="./assets/img/kenangan-2.png"
+                  class="card-img-top"
+                  alt="Gambar Tema 1"
+                />
+
+                <div class="card-body">
+                  <a
+                    href="https://hsbnsultan.github.io/kenangan-2/?to=Sultan+dan+Partner"
+                    class="button btn btn-danger mt-4"
+                    target="_blank"
+                  >
+                    <i class="fas fa-eye"></i> Lihat Thema
+                  </a>
+                  <a
+                    href="javascript:void(0);"
+                    class="button btn btn-dark mt-3"
+                    onclick="pesanTema(2)"
+                  >
+                    <i class="fas fa-shopping-cart"></i> Pesan Tema
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="col-md-4 mb-4 d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="card border-light shadow rounded-4 p-3 theme-card h-100"
+              >
+                <img
+                  src="./assets/img/kenangan-3.png"
+                  class="card-img-top"
+                  alt="Gambar Tema 1"
+                />
+
+                <div class="card-body">
+                  <a
+                    href="https://hsbnsultan.github.io/kenangan-3/?to=Sultan+dan+Partner/"
+                    class="button btn btn-danger mt-4"
+                    target="_blank"
+                  >
+                    <i class="fas fa-eye"></i> Lihat Thema
+                  </a>
+                  <a
+                    href="javascript:void(0);"
+                    class="button btn btn-dark mt-3"
+                    onclick="pesanTema(3)"
+                  >
+                    <i class="fas fa-shopping-cart"></i> Pesan Tema
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="col-md-4 mb-4 d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="card border-light shadow rounded-4 p-3 theme-card h-100"
+              >
+                <img
+                  src="./assets/img/kenangan-4.png"
+                  class="card-img-top"
+                  alt="Gambar Tema 1"
+                />
+
+                <div class="card-body">
+                  <a
+                    href="https://hsbnsultan.github.io/kenangan-4/?to=Sultan+dan+Partner/"
+                    class="button btn btn-danger mt-4"
+                    target="_blank"
+                  >
+                    <i class="fas fa-eye"></i> Lihat Thema
+                  </a>
+                  <a
+                    href="javascript:void(0);"
+                    class="button btn btn-dark mt-3"
+                    onclick="pesanTema(4)"
+                  >
+                    <i class="fas fa-shopping-cart"></i> Pesan Tema
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="col-md-4 mb-4 d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="card border-light shadow rounded-4 p-3 theme-card h-100"
+              >
+                <img
+                  src="./assets/img/kenangan-5.png"
+                  class="card-img-top"
+                  alt="Gambar Tema 1"
+                />
+
+                <div class="card-body">
+                  <a
+                    href="https://hsbnsultan.github.io/kenangan-5/?to=Sultan+dan+Partner/"
+                    class="button btn btn-danger mt-4"
+                    target="_blank"
+                  >
+                    <i class="fas fa-eye"></i> Lihat Thema
+                  </a>
+                  <a
+                    href="javascript:void(0);"
+                    class="button btn btn-dark mt-3"
+                    onclick="pesanTema(5)"
+                  >
+                    <i class="fas fa-shopping-cart"></i> Pesan Tema
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= F.A.Q Section ======= -->
+      <section id="order" class="faq">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <div class="d-flex align-items-center justify-content-center">
+              <hr
+                class="flex-grow-1 mx-1"
+                style="
+                  border-color: #000000;
+                  border-width: 2.5px;
+                  max-width: 300px;
+                "
+              />
+              <h2 class="font-depan my-4">Cara Pemesanan</h2>
+              <hr
+                class="flex-grow-1 mx-1"
+                style="
+                  border-color: #000000;
+                  border-width: 2.5px;
+                  max-width: 300px;
+                "
+              />
+            </div>
+            <p>Dengan langkah-langkah <em>mudah dan cepat</em></p>
+          </div>
+
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  class="collapse"
+                  data-bs-target="#faq-list-1"
+                  >Pilih Paket & Tema
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-1"
+                  class="collapse show"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Pilih paket undangan dan tema yang Anda inginkan dari
+                    pilihan yang tersedia.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-2"
+                  class="collapsed"
+                  >Chat Admin Kami <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-2"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Hubungi admin kami melalui nomor WhatsApp yang tertera untuk
+                    mendapatkan informasi lebih lanjut.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-3"
+                  class="collapsed"
+                >
+                  Melengkapi Form Data Pemesanan
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i>
+                </a>
+                <div
+                  id="faq-list-3"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Isi formulir pemesanan dengan data yang diperlukan untuk
+                    proses lebih lanjut.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-4"
+                  class="collapsed"
+                >
+                  Melakukan DP/Pembayaran
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i>
+                </a>
+                <div
+                  id="faq-list-4"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Lakukan pembayaran DP sesuai dengan petunjuk yang diberikan
+                    oleh admin kami.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="400">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-5"
+                  class="collapsed"
+                >
+                  Undangan Digital Sedang Diproses
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i>
+                </a>
+                <div
+                  id="faq-list-5"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Tim kami akan memproses undangan digital Anda setelah
+                    pembayaran DP diterima.
+                  </p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="400">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-6"
+                  class="collapsed"
+                >
+                  Hasil Undangan Digital Dikirim
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i>
+                </a>
+                <div
+                  id="faq-list-6"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Undangan digital akan dikirimkan kepada Anda setelah selesai
+                    diproses.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- End F.A.Q Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-center">
+      <!-- Copyright -->
+      <div
+        class="text-center text-white p-3"
+        style="background-color: rgb(0 107 179)"
+      >
+        Copyright © 2023 | Designed With by
+        <a class="text-body" href="index.html">KenanganBersama</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <div id="myDiv"></div>
+
+    <div id="preloader"></div>
+
+    <!-- Tambahkan tampilan di bawah tulisan "Kuy Order Tema Pilihan Kamu" -->
+    <div class="notification" id="notification">
+      <span class="close-button" onclick="closeNotification()"
+        ><i class="fas fa-times"></i
+      ></span>
+      <img src="./assets/img/promo.png" alt="Notification Image" />
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./floating-whatsapp/jquery-3.3.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./floating-whatsapp/floating-wpp.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $("#myDiv").floatingWhatsApp({
+          phone: "6285313839671",
+          popupMessage: "Halo, ada yang dapat kami bantu?",
+          showPopup: true,
+          message:
+            "Halo, saya tertarik untuk membuat undangan pernikahan online di Kenangan Bersama. Bisakah Anda memberikan informasi lebih lanjut?",
+          position: "right",
+        });
+      });
+    </script>
+
+    <script>
+      function pesanTemaUndangan() {
+        var pesan =
+          "Halo min bagaimana cara pesan undangan websitenya ? Bisa dibantu ? [Via Website]";
+        window.open("https://wa.me/6285313839671?text=" + encodeURI(pesan));
+      }
+    </script>
+
+    <script>
+      function pesanTema(nomorTema) {
+        var pesanAwal =
+          "Hai min, saya mau order tema pernikahan " +
+          nomorTema +
+          " yah, tolong dibantu yah";
+        bukaWhatsAppChat("6285313839671", pesanAwal);
+      }
+
+      function ubahPesanWhatsApp() {
+        var pesan =
+          "Halo min, saya mau pesan undangan websitenya, bisa dibantu? - [Via Website]";
+        bukaWhatsAppChat("6285313839671", pesan);
+      }
+
+      function bukaWhatsAppChat(nomorWhatsApp, pesan) {
+        var waURL =
+          "https://api.whatsapp.com/send?phone=" +
+          nomorWhatsApp +
+          "&text=" +
+          encodeURIComponent(pesan);
+        window.open(waURL, "_blank");
+      }
+    </script>
+
+    <script>
+      // Menampilkan notifikasi setelah 2 detik
+      setTimeout(function () {
+        document.getElementById("notification").style.display = "block";
+      }, 2000);
+
+      function closeNotification() {
+        document.getElementById("notification").style.display = "none";
+      }
+    </script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
