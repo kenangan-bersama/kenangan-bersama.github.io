@@ -1,0 +1,236 @@
+/* Silahkan edit kode berikut untuk mengubah warna */
+:root {
+  --ewc-color-1: #ffffff;
+  --ewc-color-2: #eae1da;
+  --ewc-color-3: #25d366;
+  --ewc-color-3-dark: #0bac46;
+  --ewc-color-4: #00796a;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.ewChat {
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  max-width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 999;
+}
+
+.ewChatBox {
+  width: 100%;
+  background-color: var(--ewc-color-2);
+  border-radius: 15px;
+  display: none;
+  opacity: 0;
+  transition: opacity 1000ms;
+  flex-direction: column;
+}
+
+.ewChatClose {
+  color: var(--ewc-color-1);
+  display: none;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  border: none;
+  padding: 4px;
+  border-radius: 100%;
+  background-color: var(--ewc-color-4);
+  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+}
+
+.ewChatClose:hover {
+  background-color: var(--ewc-color-3);
+}
+
+.ewChatCloseMobile {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: var(--ewc-color-1);
+  top: -300px;
+  padding: 100px 0;
+  cursor: pointer;
+}
+
+.ewChatAvatar {
+  position: absolute;
+  left: calc(50% - 32px);
+  top: -80px;
+  width: 59px;
+  height: 59px;
+  padding: 3px;
+  border: solid 2px var(--ewc-color-3);
+  border-radius: 100%;
+  background-color: var(--ewc-color-1);
+  display: flex;
+}
+
+.ewChatAvatar img {
+  border-radius: 100%;
+}
+
+.ewChatHeader {
+  background-color: var(--ewc-color-4);
+  color: var(--ewc-color-1);
+  border-radius: 15px 15px 0 0;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ewChatHeader h3 {
+  color: var(--ewc-color-1);
+  font-size: 18px;
+  margin: 3px;
+}
+
+.ewChatHeader p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.ewChatBubble {
+  background-color: var(--ewc-color-1);
+  margin: 10px 18px 10px 30px;
+  padding: 9px 9px 25px 9px;
+  text-align: left;
+  border-radius: 0 10px 10px 10px;
+  position: relative;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.ewChatBubble:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right-color: var(--ewc-color-1);
+  border-left: 0;
+  border-top: 0;
+  margin-top: 0;
+  margin-left: -15px;
+}
+
+.ewChatBubble p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.ewChatBubble span {
+  position: absolute;
+  bottom: 5px;
+  right: 9px;
+  opacity: 0.5;
+  font-size: 11px;
+}
+
+.ewChatInput {
+  display: none;
+  opacity: 0;
+  transition: opacity 1000ms;
+  width: 100%;
+  margin-top: 10px;
+  background-color: var(--ewc-color-1);
+  height: 48px;
+  border-radius: 24px;
+}
+
+.ewChatInput input {
+  font-size: 16px;
+  background-color: var(--ewc-color-1);
+  height: 32px;
+  margin: auto 20px;
+  width: 100%;
+  border: none;
+}
+
+.ewChatInput input:focus {
+  outline: none;
+}
+
+.ewChatInput button {
+  border: none;
+  background-color: var(--ewc-color-4);
+  border-radius: 20px;
+  margin: 4px;
+  color: var(--ewc-color-1);
+  padding: 8px;
+}
+
+.ewChatInput button:hover {
+  background-color: var(--ewc-color-3);
+}
+
+.ewChatDesktop {
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  height: 36px;
+  border-radius: 25px;
+  background-color: var(--ewc-color-3-dark);
+  width: 58%;
+  padding: 4px 18px;
+  font-size: 15px;
+  color: var(--ewc-color-1);
+  margin-top: 20px;
+}
+
+.ewChatDesktop svg {
+  margin-right: 10px;
+}
+
+.ewChatMobile {
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--ewc-color-3);
+  display: flex;
+  border-radius: 100%;
+  color: var(--ewc-color-1);
+  border: solid 2px var(--ewc-color-1);
+  margin-top: 20px;
+}
+
+.ewChatMobile:hover,
+.ewChatDesktop:hover {
+  background-color: var(--ewc-color-3-dark);
+}
+
+.ewChatBackdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+@media screen and (min-width: 450px) {
+  .ewChatAvatar {
+    left: -80px;
+    top: 80px;
+  }
+
+  .ewChatClose,
+  .ewChatDesktop {
+    display: flex;
+  }
+
+  .ewChatMobile,
+  .ewChatCloseMobile {
+    display: none;
+  }
+}

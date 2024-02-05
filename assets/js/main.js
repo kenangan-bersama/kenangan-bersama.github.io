@@ -92,6 +92,22 @@
   }
 
   /**
+   * Back to top button
+   */
+  let backtotop = select(".back-to-top");
+  if (backtotop) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtotop.classList.add("active");
+      } else {
+        backtotop.classList.remove("active");
+      }
+    };
+    window.addEventListener("load", toggleBacktotop);
+    onscroll(document, toggleBacktotop);
+  }
+
+  /**
    * Mobile nav toggle
    */
   on("click", ".mobile-nav-toggle", function (e) {
@@ -122,7 +138,7 @@
     "click",
     ".scrollto",
     function (e) {
-      if (this.hash) {
+      if (select(this.hash)) {
         e.preventDefault();
 
         let navbar = select("#navbar");
@@ -152,12 +168,10 @@
   /**
    * Preloader
    */
-  let preloader = document.getElementById("preloader");
+  let preloader = select("#preloader");
   if (preloader) {
     window.addEventListener("load", () => {
-      setTimeout(() => {
-        preloader.style.display = "none";
-      }, 1000); // Ganti 1000 dengan jumlah milidetik yang diinginkan
+      preloader.remove();
     });
   }
 
@@ -176,6 +190,24 @@
   });
 
   /**
+   * Testimonials slider
+   */
+  new Swiper(".testimonials-slider", {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: "auto",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+
+  /**
    * Animation on scroll
    */
   window.addEventListener("load", () => {
@@ -186,28 +218,6 @@
       mirror: false,
     });
   });
-
-  // Daftar judul yang akan diulang
-  var judulUndangan = [
-    "Undangan Pernikahan Digital - KenanganBersama",
-    "Spesial Buat Kamu & Pasangan Kamu!",
-    "Selamat Datang!",
-    // Tambahkan judul lain jika diperlukan
-  ];
-
-  // Fungsi untuk mengganti title secara berkala
-  function gantiJudulPeriodik() {
-    var titleElement = document.getElementById("dynamicTitle");
-    var indeksJudul = 0;
-
-    setInterval(function () {
-      titleElement.textContent = judulUndangan[indeksJudul];
-      indeksJudul = (indeksJudul + 1) % judulUndangan.length;
-    }, 2500);
-  }
-
-  // Panggil fungsi gantiJudulPeriodik saat halaman dimuat
-  window.onload = gantiJudulPeriodik;
 
   /**
    * Initiate Pure Counter
