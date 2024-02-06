@@ -9,15 +9,15 @@ let paramsDefault = {
   },
   optionsChat: {
     buttonTarget: `https://api.whatsapp.com/send?`,
-    message: "Hello everyone",
-    phone: "+55479999999999",
-    text: "Send",
+    message: "Halo semuanya",
+    phone: "+6281380747386",
+    text: "Kirim",
   },
   optionsBot: {
     name: "Bot",
     image: "https://img.icons8.com/plasticine/2x/bot.png",
-    messageDefault: "Hi, 👋 how can I help you?",
-    messageTyping: "is typing...",
+    messageDefault: "Hai, 👋 ada yang bisa saya bantu?",
+    messageTyping: "sedang mengetik...",
   },
 };
 
