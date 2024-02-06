@@ -14,8 +14,8 @@ let paramsDefault = {
     text: "Kirim",
   },
   optionsBot: {
-    name: "Bot",
-    image: "https://img.icons8.com/plasticine/2x/bot.png",
+    name: "Admin",
+    image: "./assets/img/logo.png",
     messageDefault: "Hai, 👋 ada yang bisa saya bantu?",
     messageTyping: "sedang mengetik...",
   },
