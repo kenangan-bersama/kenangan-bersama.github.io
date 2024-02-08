@@ -1,6 +1,6 @@
 const paramsDefault = {
   optionsPopup: {
-    background: "#095E54",
+    background: "#003399",
     color: "#FFFFFF",
   },
   optionsIcon: {
@@ -14,7 +14,7 @@ const paramsDefault = {
   },
   optionsBot: {
     name: "Admin",
-    image: "./assets/img/logo.png",
+    image: "./assets/img/logo-2.png",
     messageDefault: "Hai, 👋 ada yang bisa saya bantu?",
     messageTyping: "sedang mengetik...",
   },
@@ -59,9 +59,9 @@ function createElements(params) {
 
   if (params) paramsDefault = params;
 
-  const strTarget = ` <a href="#" id="whatsapp-widget-target" class="whatsapp-widget-target pulse">
-                            <img id="whatsapp-widget-icon" class="whatsapp-widget-icon" src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone.png"/>
-                        </a>`;
+  const strTarget = `<a href="#" id="whatsapp-widget-target" class="whatsapp-widget-target pulse">
+                        <img id="whatsapp-widget-icon" class="whatsapp-widget-icon" src="https://www.freeiconspng.com/uploads/blue-whatsapp-logo-clip-art-30.png" loading="lazy"/>
+                    </a>`;
 
   const strChat = `<div class="whatsapp-widget-chat" id="whatsapp-widget-chat">
                         <div class="whatsapp-widget-chat-header" id="whatsapp-widget-chat-header" style="background: ${paramsDefault.optionsPopup.background}; color: ${paramsDefault.optionsPopup.color}">
@@ -188,26 +188,3 @@ function timeNow() {
 }
 
 initWidget();
-
-function openWhatsApp() {
-  // Nomor WhatsApp
-  var phoneNumber = "6281380747386";
-
-  // Pesan (opsional)
-  var message = "Halo, saya tertarik dengan layanan Anda.";
-
-  // Membuat link untuk membuka WhatsApp dengan nomor dan pesan yang ditentukan
-  var url =
-    "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-
-  // Membuka link di tab atau jendela baru
-  window.open(url, "_blank");
-}
-
-function openInstagram() {
-  // URL profil Instagram
-  var instagramUrl = "https://www.instagram.com/kenanganbersama_id/";
-
-  // Membuka link profil Instagram di tab atau jendela baru
-  window.open(instagramUrl, "_blank");
-}

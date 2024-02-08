@@ -1,4 +1,16 @@
 /** BEGIN MAIN WIDGET **/
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 #whatsapp-widget {
   font-family: "Fira Sans", sans-serif;
   position: fixed;
@@ -12,10 +24,12 @@
   width: 60px;
   height: 60px;
   display: table;
-  background: #24cd63;
+  background: #0205a1;
   color: #fff;
   text-align: center;
   border-radius: 50%;
+  animation: heartbeat 1s infinite;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 #whatsapp-widget-icon {
@@ -27,6 +41,7 @@
   top: 25%;
   left: 25%;
 }
+
 /** BEGIN MAIN WIDGET **/
 
 /** BEGIN POPUP WIDGET **/
@@ -42,7 +57,7 @@
   right: 0px;
   z-index: 999999;
   bottom: 250px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 24px 0px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s ease 0s, margin 0.3s ease 0s, visibility 0.3s ease 0s;
 }
 @media (min-width: 768px) {
@@ -52,7 +67,7 @@
 }
 
 #whatsapp-widget-chat-header {
-  background: #095e54;
+  background: #003399;
   height: 220px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -194,6 +209,7 @@
   background: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 #whatsapp-widget-chat-footer a {
@@ -202,7 +218,7 @@
   flex-direction: column;
   color: #fff;
   text-decoration: none;
-  background: #24cd63;
+  background: #003399;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
