@@ -1,12 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
-
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 /** BEGIN MAIN WIDGET **/
 #whatsapp-widget {
-  font-family: "Roboto";
+  font-family: "Fira Sans", sans-serif;
   position: fixed;
   bottom: 20px;
   right: 40px;

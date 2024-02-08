@@ -1,4 +1,4 @@
-let paramsDefault = {
+const paramsDefault = {
   optionsPopup: {
     background: "#095E54",
     color: "#FFFFFF",
@@ -9,7 +9,6 @@ let paramsDefault = {
   },
   optionsChat: {
     buttonTarget: `https://api.whatsapp.com/send?`,
-    message: "Halo semuanya",
     phone: "+6281380747386",
     text: "Kirim",
   },
@@ -22,6 +21,25 @@ let paramsDefault = {
 };
 
 let timer;
+
+function getGreeting() {
+  const currentTime = new Date();
+  const currentHour = currentTime.getHours();
+
+  let greeting = "";
+
+  if (currentHour < 12) {
+    greeting = "Selamat pagi";
+  } else if (currentHour < 18) {
+    greeting = "Selamat siang";
+  } else {
+    greeting = "Selamat malam";
+  }
+
+  return greeting;
+}
+
+paramsDefault.optionsChat.message = getGreeting();
 
 function initWidget(params) {
   document.addEventListener("DOMContentLoaded", function (e) {
@@ -170,3 +188,26 @@ function timeNow() {
 }
 
 initWidget();
+
+function openWhatsApp() {
+  // Nomor WhatsApp
+  var phoneNumber = "6281380747386";
+
+  // Pesan (opsional)
+  var message = "Halo, saya tertarik dengan layanan Anda.";
+
+  // Membuat link untuk membuka WhatsApp dengan nomor dan pesan yang ditentukan
+  var url =
+    "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+  // Membuka link di tab atau jendela baru
+  window.open(url, "_blank");
+}
+
+function openInstagram() {
+  // URL profil Instagram
+  var instagramUrl = "https://www.instagram.com/kenanganbersama_id/";
+
+  // Membuka link profil Instagram di tab atau jendela baru
+  window.open(instagramUrl, "_blank");
+}

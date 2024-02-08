@@ -885,25 +885,108 @@
     </main>
     <!-- End #main -->
 
-    <!-- Footer -->
-    <footer class="bg-body-tertiary text-center">
-      <!-- Copyright -->
-      <div
-        id="copyright"
-        class="text-center text-white p-3"
-        style="background-color: rgb(0 107 179)"
-      >
-        Copyright © <span id="currentYear"></span> | Designed With by
-        <a class="text-body" href="index.html">KenanganBersama</a>
+    <style>
+      footer {
+        background-color: #003399;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer .container {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .footer p {
+        margin: 20px 0 10px; /* Mengurangi margin atas menjadi 10px */
+      }
+
+      /* Style untuk copyright span */
+      #copyright {
+        font-weight: bold;
+        color: #def607;
+      }
+
+      .social-icons {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .social-icon {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: #7b68ee;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s, box-shadow 0.3s; /* Menambahkan box-shadow ke dalam transition */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan box shadow dengan opsi blur dan spread */
+      }
+
+      .social-icon i {
+        margin-right: 5px;
+      }
+
+      .social-icon:hover {
+        background-color: #0056b3;
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Menambahkan box shadow yang lebih tebal saat dihover */
+        color: #fff;
+      }
+
+      footer hr {
+        border: none;
+        border-bottom: 2px solid #fff;
+        margin: 10px auto; /* Mengurangi margin atas dan bawah menjadi 10px */
+        width: 75%;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+        .footer .container {
+          max-width: 100%;
+          padding: 0 10px;
+        }
+
+        .social-icon {
+          margin: 10px 5px;
+          padding: 8px 15px;
+          font-size: 16px;
+        }
+
+        footer hr {
+          width: 90%; /* Mengatur lebar garis menjadi 90% saat layar lebih kecil dari 768px */
+        }
+      }
+    </style>
+    <footer>
+      <div class="container">
+        <p>
+          &copy; <span id="copyright"> </span> Kenangan Bersama. All rights
+          reserved.
+        </p>
+        <hr />
+        <div class="social-icons">
+          <a href="#" class="social-icon whatsapp" onclick="openWhatsApp()">
+            <i class="fab fa-whatsapp"></i> Hubungi Kami
+          </a>
+          <a href="#" class="social-icon instagram" onclick="openInstagram()">
+            <i class="fab fa-instagram"></i> Ikuti Kami
+          </a>
+        </div>
       </div>
-      <!-- Copyright -->
     </footer>
 
     <script>
-      // JavaScript code to dynamically update the current year
-      document.getElementById("currentYear").innerText =
-        new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", function () {
+        var yearSpan = document.getElementById("copyright");
+        var currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+      });
     </script>
+
     <!-- Footer -->
 
     <div id="myDiv"></div>
